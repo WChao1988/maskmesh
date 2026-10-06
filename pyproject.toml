@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "maskmesh"
+dynamic = ["version"]
+description = "Equidistant lat/lon mesh grids centered on any point on the sphere, with seamless polar and antimeridian wrap-around"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [
+    { name = "Chao Wang", email = "WangChaoAnHui@126.com" },
+]
+keywords = ["gis", "grid", "mesh", "mask", "latitude", "longitude", "meteorology", "sphere"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+    "numpy>=1.20",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+# TODO: replace `your-name` with the real GitHub account before publishing
+[project.urls]
+Homepage = "https://github.com/your-name/maskmesh"
+Repository = "https://github.com/your-name/maskmesh"
+Issues = "https://github.com/your-name/maskmesh/issues"
+Changelog = "https://github.com/your-name/maskmesh/releases"
+
+[tool.hatch.version]
+path = "src/maskmesh/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/maskmesh"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+    "/README.md",
+    "/LICENSE",
+]
