@@ -3,7 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/maskmesh)](https://pypi.org/project/maskmesh/)
 [![Python](https://img.shields.io/pypi/pyversions/maskmesh)](https://pypi.org/project/maskmesh/)
 [![License: MIT](https://img.shields.io/pypi/l/maskmesh)](LICENSE)
-[![CI](https://github.com/your-name/maskmesh/actions/workflows/ci.yml/badge.svg)](https://github.com/your-name/maskmesh/actions/workflows/ci.yml)
+[![CI](https://github.com/WChao1988/maskmesh/actions/workflows/ci.yml/badge.svg)](https://github.com/WChao1988/maskmesh/actions/workflows/ci.yml)
 
 `maskmesh` builds regular latitude/longitude mesh grids **centered on an arbitrary point on the sphere**.
 
@@ -25,7 +25,7 @@ pip install maskmesh
 Or from source:
 
 ```bash
-git clone https://github.com/your-name/maskmesh.git
+git clone https://github.com/WChao1988/maskmesh.git
 cd maskmesh
 pip install .
 ```

@@ -39,10 +39,10 @@ dev = [
 
 # TODO: replace `your-name` with the real GitHub account before publishing
 [project.urls]
-Homepage = "https://github.com/your-name/maskmesh"
-Repository = "https://github.com/your-name/maskmesh"
-Issues = "https://github.com/your-name/maskmesh/issues"
-Changelog = "https://github.com/your-name/maskmesh/releases"
+Homepage = "https://github.com/WChao1988/maskmesh"
+Repository = "https://github.com/WChao1988/maskmesh"
+Issues = "https://github.com/WChao1988/maskmesh/issues"
+Changelog = "https://github.com/WChao1988/maskmesh/releases"
 
 [tool.hatch.version]
 path = "src/maskmesh/__init__.py"
